@@ -25,7 +25,10 @@ This method provides a seamless experience as though the display were connected 
 
 ### 2. Using a Thunderbolt Add-On Card (e.g., GC-Alpine Ridge)
 - **Card Type**: Thunderbolt 3 PCIe add-on card (e.g., GC-Alpine Ridge).
-- **Setup**: Install the PCIe card in your PC or laptop, then connect the DisplayPort (DP) or mini-DP output to the card. The card will output Thunderbolt 3 with the display signal. 
+- **Setup**: Install the PCIe card in your PC, then connect the DisplayPort (DP) or mini-DP output to the card. The card will output Thunderbolt 3 with the display signal.
+  
+  **Alternative Setup**: You can also use a **PCIe x1 to x16 riser** (commonly used in cryptocurrency mining) to connect the add-on card without needing to install it in an actual PC. This allows you to use the card externally with a simple PCIe power adapter.
+
 - **Functionality**: 
   - **Note**: This method does not use any PCIe bandwidth, meaning you won’t get additional features like camera, USB hub, or brightness control. It only provides display output.
 
@@ -33,7 +36,7 @@ This method provides a seamless experience as though the display were connected 
 
 ## Daisy Chaining Multiple Thunderbolt Displays
 
-Some PCs and laptops support **Daisy Chain** for Thunderbolt Displays, allowing you to connect multiple displays using a single Thunderbolt 3 port. However, certain systems do not support this feature (e.g., **ASROCK X570 ITX/TB3**).
+Some PCs and laptops support **multiple display outputs on a single Thunderbolt port**, allowing for Daisy Chain functionality with Thunderbolt Displays. This means you can connect multiple displays using a single Thunderbolt 3 port. However, certain systems do not support this feature (e.g., **ASROCK X570 ITX/TB3**).
 
 ---
 
