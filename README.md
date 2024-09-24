@@ -22,7 +22,7 @@ For **Thunderbolt 4 hosts**, display functionality may not work on Windows syste
 - **Functionality**: This method retains all functionalities of the display, such as:
   - Camera
   - USB Hub
-  - Brightness Control
+  - Brightness Control ([Windows](https://www.holstschumacher.dk/p/brightness-controller.html), [Linux](https://github.com/yhaenggi/acdcontrol))
 
 This method provides a seamless experience as though the display were connected to a macOS system.
 
