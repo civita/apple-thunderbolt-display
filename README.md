@@ -33,7 +33,7 @@ This method provides a seamless experience as though the display were connected 
   **Alternative Setup**: You can also use a **PCIe x1 to x16 riser** (commonly used in cryptocurrency mining) to connect the add-on card without needing to install it in an actual PC. This allows you to use the card externally with a simple PCIe power adapter.
 
 - **Functionality**: 
-  - **Note**: This method does not use any PCIe bandwidth, meaning you won’t get additional features like camera, USB hub, or brightness control. It only provides display output.
+  - **Note**: This method does not use any PCIe bandwidth, meaning you won’t get additional features like camera, USB hub, or brightness control. It only provides display output. With this method, you can connect any device that has DisplayPort output, including USB-C devices with DisplayPort Alternate (DP Alt) Mode using an adapter.
 
 ---
 
