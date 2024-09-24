@@ -9,7 +9,7 @@ If your host device (PC or laptop) has Thunderbolt 3 support with an **Alpine Ri
 For **Titan Ridge-based Thunderbolt 3** or **Thunderbolt 4/USB 4** hosts, additional steps or hardware are required for a full connection. This guide covers two methods for connecting these devices.
 
 ### Thunderbolt 4 Restriction
-For **Thunderbolt 4 hosts**, display functionality may not work on Windows systems, even for single-display setups. However, the display is known to work on other operating systems such as **Debian**. If you're using a Windows system with a Thunderbolt 4 host, you may encounter issues when trying to connect the Apple Thunderbolt Display.
+For **Thunderbolt 4 hosts**, display functionality may not work on Windows systems, even for single-display setups, and will only work with connection method #2 mentioned below. However, the display is known to work on other operating systems such as **Debian**. If you're using a Windows system with a Thunderbolt 4 host, you may encounter issues when trying to connect the Apple Thunderbolt Display.
 
 ---
 
