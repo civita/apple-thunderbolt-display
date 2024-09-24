@@ -6,7 +6,10 @@ The Apple Thunderbolt Display (A1407) was designed for macOS systems, but it can
 
 If your host device (PC or laptop) has Thunderbolt 3 support with an **Alpine Ridge controller**, it will work directly using a **Thunderbolt 3 to Thunderbolt 2 adapter**. 
 
-For **Titan Ridge-based Thunderbolt 3** or **Thunderbolt 4/USB 4** hosts, additional steps or hardware are required for a full connection. This guide covers two methods for connecting these devices.
+For **Titan Ridge-based Thunderbolt 3** or **Thunderbolt 4/USB 4** hosts, additional steps or hardware are required for a full connection. However, functionality may be limited on Windows systems, particularly for Thunderbolt 4 hosts, which may not support display output at all on Windows.
+
+### Thunderbolt 4 Restriction
+For **Thunderbolt 4 hosts**, display functionality may not work on Windows systems, even for single-display setups. However, the display is known to work on other non-Windows operating systems such as **Debian or other Linux-based systems**. If you're using a Windows system with a Thunderbolt 4 host, you may encounter issues when trying to connect the Apple Thunderbolt Display.
 
 ---
 
@@ -15,7 +18,7 @@ For **Titan Ridge-based Thunderbolt 3** or **Thunderbolt 4/USB 4** hosts, additi
 ### 1. Using an Alpine Ridge-Based Thunderbolt 3 Dock
 - **Dock Type**: Alpine Ridge-based Thunderbolt 3 Dock (JHL6540 or DSL6540).
 - **Example**: Belkin Thunderbolt 3 Express Dock HD (available at low prices on eBay).
-- **Setup**: Connect the dock to the host (PC or laptop) using a Thunderbolt 3 cable. From the dock, connect the Apple Thunderbolt Display using a **Thunderbolt 2 to Thunderbolt 3 adapter**.
+- **Setup**: Connect the dock to the host (PC or laptop) using a Thunderbolt 3 cable. From the dock, connect the Apple Thunderbolt Display using a **Thunderbolt 2 to Thunderbolt 3 adapter** (required for all setups).
 - **Functionality**: This method retains all functionalities of the display, such as:
   - Camera
   - USB Hub
@@ -47,8 +50,8 @@ Some PCs and laptops support **multiple display outputs on a single Thunderbolt 
 | **Thunderbolt 3 (Alpine Ridge)**          | Direct Connection | TB3 to TB2 adapter              | Full (Camera, USB Hub, Brightness Control) | Works seamlessly |
 | **Thunderbolt 3 (Titan Ridge)**           | Method 1: Dock     | TB3 Dock (Alpine Ridge-based)   | Full                   | Belkin Thunderbolt 3 Express Dock HD recommended |
 |                                           | Method 2: Add-on   | PCIe Thunderbolt 3 card (GC-Alpine Ridge) + DP cable | Display Only            | No camera, USB hub, or brightness control |
-| **Thunderbolt 4 / USB 4**                 | Method 1: Dock     | TB3 Dock (Alpine Ridge-based)   | Full                   | Full functionality with dock |
-| **Thunderbolt 4 / USB 4**                 | Method 2: Add-on   | PCIe Thunderbolt 3 card (GC-Alpine Ridge) + DP cable | Display Only            | Same as above, display only |
+| **Thunderbolt 4 / USB 4**                 | Method 1: Dock     | TB3 Dock (Alpine Ridge-based)   | Full (non-Windows OS)   | Works on **non-Windows OS** such as Debian; does not work on Windows for any display functionality |
+|                                           | Method 2: Add-on   | PCIe Thunderbolt 3 card (GC-Alpine Ridge) + DP cable | Display Only (non-Windows OS) | Works on **non-Windows OS** only |
 | **Daisy Chain Support**                   | Varies            | Depends on host capabilities    | Full (if supported)     | Not supported on all systems (e.g., ASROCK X570 ITX/TB3) |
 
 ---
@@ -57,7 +60,7 @@ Some PCs and laptops support **multiple display outputs on a single Thunderbolt 
 
 - **Alpine Ridge vs. Titan Ridge**: 
   - **Alpine Ridge** controllers allow for direct compatibility with Thunderbolt 2 devices.
-  - **Titan Ridge** and **Thunderbolt 4** hosts typically require a docking solution for full functionality.
+  - **Titan Ridge** and **Thunderbolt 4** hosts typically require a docking solution for full functionality due to their focus on compatibility with modern USB-C and Thunderbolt peripherals, which may require extra power or bandwidth allocation.
   
 - **Used Hardware**: You can find Alpine Ridge-based Thunderbolt 3 docks (e.g., Belkin Thunderbolt 3 Express Dock HD) on eBay for lower prices, making them an economical solution.
 
